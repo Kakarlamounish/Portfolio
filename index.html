@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="my.css" />
+    <script src="https://kit.fontawesome.com/743110f3ba.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="dark-mode">
+    <!-- Header Section -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo1.jpeg" class="logo" alt="Logo" />
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>SOFTWARE ENGINEER</p>
+                <h1>Hi, I'm <span>Mounish Kakarla</span><br />From India</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/mc.jpg" alt="Profile Picture" />
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-titles">About Me</h1>
+                    <p>
+                        Detail-oriented Software Engineer skilled in Python, Java, and AWS,
+                        with a passion for building scalable applications and AI-driven
+                        solutions.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
+                        <p class="tab-links" onclick="opentab('education', event)">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><i class="fas fa-code"></i> <span>Programming Languages:</span> Java, Python, Advance
+                                Java</li>
+                            <li><i class="fas fa-laptop-code"></i> <span>Frameworks & Technologies:</span> Django,
+                                LangChain</li>
+                            <li><i class="fab fa-html5"></i> <span>Web Technologies:</span> HTML, CSS, JavaScript</li>
+                            <li><i class="fas fa-cloud"></i> <span>Cloud Technologies:</span> AWS</li>
+                            <li><i class="fas fa-database"></i> <span>Database:</span> MySQL, Oracle</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><i class="fas fa-university"></i> <span>2020-2024</span><br />Bachelor of Technology,
+                                JNTUACEK, Kalikiri</li>
+                            <li><i class="fas fa-school"></i> <span>2018-2020</span><br />PCM INTERMEDIATE, Mangal
+                                Vidyalayam, Chittoor</li>
+                            <li><i class="fas fa-school"></i> <span>2017-2018</span><br />10th Class, Mangal Vidyalayam,
+                                Chittoor</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Section -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-titles">My Projects</h1>
+            <div class="work-list">
+
+                <!-- Project 1 -->
+                <div class="work">
+                    <div class="project-info">
+                        <h3>Restaurant Name Generator (OpenAI + LangChain)</h3>
+                        <p>This creative Python app generates unique and catchy restaurant names based on cuisine and
+                            themes.</p>
+                        <ul>
+                            <li>✨ Combines adjectives, cuisines, and branding terms</li>
+                            <li>🎯 Supports input for cuisine, mood, or theme</li>
+                            <li>🔁 Outputs multiple name suggestions per run</li>
+                            <li>🧠 Uses Python logic and randomness for variety</li>
+                        </ul>
+                    </div>
+                    <div class="project-images">
+                        <img src="images/res1.png" alt="Restaurant Project 1" class="lightbox-trigger"
+                            data-img="images/res1.png" />
+                        <img src="images/res2.png" alt="Restaurant Project 2" class="lightbox-trigger"
+                            data-img="images/res2.png" />
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="work">
+                    <div class="project-info">
+                        <h3>PYSHOP (Django)</h3>
+                        <p>PyShop is a Django-powered e-commerce platform featuring search, cart, and product
+                            management.</p>
+                        <ul>
+                            <li>🛍️ Admin product and category management</li>
+                            <li>🔍 Product search and category filtering</li>
+                            <li>🛒 Dynamic cart with quantity updates</li>
+                            <li>🔐 Secure login and user authentication</li>
+                        </ul>
+                    </div>
+                    <div class="project-images">
+                        <img src="images/pyshop1.png" alt="PyShop Image 1" class="lightbox-trigger"
+                            data-img="images/pyshop1.png" />
+                        <img src="images/pyshop2.png" alt="PyShop Image 2" class="lightbox-trigger"
+                            data-img="images/pyshop2.png" />
+                        <img src="images/pyshop3.png" alt="PyShop Image 3" class="lightbox-trigger"
+                            data-img="images/pyshop3.png" />
+                        <img src="images/pyshop4.png" alt="PyShop Image 4" class="lightbox-trigger"
+                            data-img="images/pyshop4.png" />
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="work">
+                    <div class="project-info">
+                        <h3>EXA (Semantic Search with Python)</h3>
+                        <p>Exa Search is a context-aware engine using embeddings and the Exa API to retrieve relevant
+                            results.</p>
+                        <ul>
+                            <li>🔍 Understands query intent beyond keywords</li>
+                            <li>🧠 Uses vector search and semantic relevance</li>
+                           
+                        </ul>
+                    </div>
+                    <div class="project-images">
+                        <img src="images/exa1.png" alt="Exa Search 1" class="lightbox-trigger"
+                            data-img="images/exa1.png" />
+                        <img src="images/exa2.png" alt="Exa Search 2" class="lightbox-trigger"
+                            data-img="images/exa2.png" />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> mounishnaidu1943@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> 7993175737</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/_mounish_chowdary_"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.snapchat.com/add/mounish_kakarla"><i class="fab fa-snapchat"></i></a>
+                        <a href="https://x.com/MounishChowda15"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/mounish-chowdary-kakarla-7366651b4"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <a href="images/Mounish_Resume.pdf" download class="btn btn2"><i class="fas fa-download"></i>
+                        Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required />
+                        <input type="email" name="email" placeholder="Your Email" required />
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Mounish <i class="fas fa-heart"></i> VENI-VIDI-VICI</p>
+        </div>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox-modal" class="lightbox-modal">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" />
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        function opentab(tabname, event) {
+            const tablinks = document.getElementsByClassName("tab-links");
+            const tabcontents = document.getElementsByClassName("tab-contents");
+            for (let tablink of tablinks) tablink.classList.remove("active-link");
+            for (let tabcontent of tabcontents) tabcontent.classList.remove("active-tab");
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        function openmenu() {
+            document.getElementById("sidemenu").style.right = "0";
+        }
+
+        function closemenu() {
+            document.getElementById("sidemenu").style.right = "-200px";
+        }
+
+        // Lightbox
+        document.querySelectorAll('.lightbox-trigger').forEach(img => {
+            img.addEventListener('click', function () {
+                const modal = document.getElementById('lightbox-modal');
+                const modalImg = document.getElementById('lightbox-img');
+                modal.style.display = 'block';
+                modalImg.src = this.getAttribute('data-img');
+            });
+        });
+
+        document.querySelector('.lightbox-close').addEventListener('click', function () {
+            document.getElementById('lightbox-modal').style.display = 'none';
+        });
+
+        document.getElementById('lightbox-modal').addEventListener('click', function (e) {
+            if (e.target === this) this.style.display = 'none';
+        });
+    </script>
+</body>
+
+</html>
